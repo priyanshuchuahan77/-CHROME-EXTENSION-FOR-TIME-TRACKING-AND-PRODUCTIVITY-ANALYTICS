@@ -25,5 +25,8 @@ Database: MongoDB
 Dashboard: HTML, CSS, Chart.js
 This project demonstrates a real-world application of browser automation, real-time data tracking, and full-stack web development. It’s a useful personal productivity tool and can be extended further with features like user authentication, productivity scoring, and daily reminders or reports.
 
+*OUTPUT
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d0674255-7b87-4a9a-9144-c4c8b9712df0" />
+
 
 
