@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productivity Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial; margin: 30px; }
+    canvas { max-width: 600px; }
+  </style>
+</head>
+<body>
+  <h2>Weekly Productivity Report</h2>
+  <canvas id="timeChart"></canvas>
+
+  <script>
+    fetch("http://localhost:5000/api/stats")
+      .then(res => res.json())
+      .then(data => {
+        const labels = data.map(d => d._id);
+        const times = data.map(d => d.totalTime);
+
+        new Chart(document.getElementById("timeChart"), {
+          type: "bar",
+          data: {
+            labels,
+            datasets: [{
+              label: "Time Spent (seconds)",
+              data: times,
+              backgroundColor: "rgba(75, 192, 192, 0.6)"
+            }]
+          }
+        });
+      });
+  </script>
+</body>
+</html>
