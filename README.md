@@ -27,7 +27,7 @@ This project demonstrates a real-world application of browser automation, real-t
 
 *OUTPUT
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d0674255-7b87-4a9a-9144-c4c8b9712df0" />
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/5896818e-4525-403b-8f88-d4c27e81b992" />
+
 
 
 
